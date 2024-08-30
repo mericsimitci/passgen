@@ -16,7 +16,6 @@ def genpass(length, uppercase=False, lowercase=False, num=False, symbol=False):
     if not passch:
         raise ValueError("You should specify a option (uppercase, lowercase, number or symbol).")
 
-    # Şifre oluştur
     return ''.join(random.choice(passch) for _ in range(length))
 
 def main():
